@@ -1,0 +1,48 @@
+/* VARIABLES ------------------------------------------------- */
+
+
+
+/* BASE STYLES ------------------------------------------------- */
+
+body {
+  font-family: ;
+}
+
+h1,
+h2 {
+  font-family: ;
+}
+
+a,
+h2 {
+  color: ;
+}
+
+header {
+  background: linear-gradient( ),
+              url('../img/bg.jpg') no-repeat;
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+/* COMPONENT STYLES ----------------------------------------------- */
+
+.main-nav li {
+  margin: ;
+}
+
+.btn-callout {
+  background-color: ;
+}
+
+.btn-info {
+  background-color: ;
+}
+
+/* MEDIA QUERIES -------------------------------------------------- */
+
+@media (min-width: 768px) {
+  .main-content {
+    max-width: ;
+  }
+}
