@@ -12,6 +12,7 @@
   --font-stack-secondary: 'Bree Serif', serif;
 
   --max-width: 1000px;
+  --spacing: 2;
 }
 
 /* BASE STYLES ------------------------------------------------- */
@@ -35,19 +36,19 @@ header {
               url('../img/bg.jpg') no-repeat;
   background-blend-mode: multiply;
   background-size: cover;
-  margin-bottom: ;
+  margin-bottom: calc(var(--spacing) * 1em); /* 2em */
 }
 
 /* COMPONENT STYLES ----------------------------------------------- */
 
 .main-nav li {
-  margin: ;
+  margin: 0 calc(var(--spacing) * 10px); /* 20px */
 }
 
 .btn {
-  font-size: var(--btn-font-size);
-  color: var(--btn-color);
-  background-color: var(--btn-bg);
+  font-size: var(--btn-font-size, 0.85em);
+  color: var(--btn-color, #fff);
+  background-color: var(--btn-bg, #60a4b3);
 }
 
 /* MEDIA QUERIES -------------------------------------------------- */
