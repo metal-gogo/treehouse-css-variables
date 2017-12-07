@@ -14,7 +14,7 @@
   --font-stack-secondary: 'Bree Serif', serif;
 
   --max-width: 1000px;
-  --gutter: 12px;
+  --gutter: 1rem;
 }
 
 /* BASE STYLES ------------------------------------------------- */
@@ -37,9 +37,14 @@ header {
   background: linear-gradient(var(--gradient)), url('../img/bg.jpg') no-repeat;
   background-blend-mode: multiply;
   background-size: cover;
+  margin-bottom: var(--gutter);
 }
 
 /* COMPONENT STYLES ----------------------------------------------- */
+
+.main-content {
+  grid-gap: var(--gutter);
+}
 
 .btn-info {
   background-color: var(--color-primary);
@@ -47,7 +52,16 @@ header {
 
 /* MEDIA QUERIES -------------------------------------------------- */
 
+@media (min-width: 576px) {
+  :root {
+    --gutter: 3rem;
+  }
+}
+
 @media (min-width: 768px) {
+  :root {
+    --gutter: 5rem;
+  }
   .main-content {
     max-width: var(--max-width);
   }
