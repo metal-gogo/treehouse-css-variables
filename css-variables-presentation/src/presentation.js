@@ -22,13 +22,13 @@ require('normalize.css');
 
 const theme = createTheme(
   {
-    primary: 'white',
-    secondary: '#1F2022',
-    tertiary: '#03A9FC',
-    quartenary: '#CECECE'
+    primary: '#051727',
+    secondary: '#fff',
+    tertiary: '#959ea2',
+    accent: '#54d1a7'
   },
   {
-    primary: 'Montserrat',
+    primary: 'Lato',
     secondary: 'Helvetica'
   }
 );
