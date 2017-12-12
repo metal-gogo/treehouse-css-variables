@@ -2,20 +2,13 @@
 import React from 'react';
 
 // Import Spectacle Core tags
-import {
-  BlockQuote,
-  Cite,
-  Deck,
-  Heading,
-  ListItem,
-  List,
-  Quote,
-  Slide,
-  Text
-} from 'spectacle';
+import { Deck, Heading, ListItem, List, Slide, Text } from 'spectacle';
 
 // Import theme
 import createTheme from 'spectacle/lib/themes/default';
+
+// Import custom components
+import CanIUse from './components/can-i-use';
 
 // Require CSS
 require('normalize.css');
@@ -25,7 +18,7 @@ const theme = createTheme(
     primary: '#051727',
     secondary: '#fff',
     tertiary: '#959ea2',
-    accent: '#54d1a7'
+    quarternary: '#54d1a7'
   },
   {
     primary: 'Lato',
@@ -43,7 +36,7 @@ export default class Presentation extends React.Component {
         theme={theme}
       >
         <Slide transition={['zoom']} bgColor="primary">
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+          <Heading size={1} caps lineHeight={1} textColor="secondary">
             CSS Variables
           </Heading>
           <Heading margin="10px 0 0" size={2} textColor="tertiary" fit bold>
@@ -54,9 +47,34 @@ export default class Presentation extends React.Component {
             by Daniel González
           </Text>
         </Slide>
-        <Slide transition={['fade']} bgColor="tertiary" />
-        <Slide transition={['fade']} bgColor="primary" textColor="tertiary" />
-        <Slide transition={['fade']} bgColor="secondary" textColor="primary" />
+        <Slide transition={['fade']} bgColor="secondary" textColor="primary">
+          <Heading size={1} caps lineHeight={1} textColor="terciary">
+            CSS Variables
+          </Heading>
+          <List margin="30px 0 0">
+            <ListItem margin="10px 0 0">
+              CSS variables are a game changer!
+            </ListItem>
+            <ListItem margin="10px 0 0">
+              They can do more than preprocessor variables.
+            </ListItem>
+            <ListItem margin="10px 0 0">
+              Supported in mayor browsers (Except IE).
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="secondary" textColor="primary">
+          <Heading
+            margin="0 0 30px"
+            size={1}
+            caps
+            lineHeight={1}
+            textColor="terciary"
+          >
+            CSS Variables
+          </Heading>
+          <CanIUse feature="css-variables" />
+        </Slide>
       </Deck>
     );
   }
