@@ -13,7 +13,7 @@ const CanIUse = (props, context) => {
         title={`Can I use for ${feature}`}
         frameBorder="0"
         width="100%"
-        height="416px"
+        height="424px"
       />
     </div>
   );
