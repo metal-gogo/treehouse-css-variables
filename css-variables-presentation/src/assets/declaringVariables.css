@@ -1,0 +1,22 @@
+/* VARIABLES --------------------------------------------------- */
+:root {
+  /* The same as body selector, but with greater specificity */
+  --color-bg: #3acec2;
+  --color-bg-light: #009fe1;
+  --gradient: var(--color-bg-light), var(--color-bg);
+  --font-stack: 'Lato', sans-serif;
+  --max-width: 1000px;
+  --gutter: 12px;
+}
+
+/* BASE STYLES ------------------------------------------------- */
+
+/* ...Some base styles... */
+
+/* COMPONENT STYLES ----------------------------------------------- */
+
+/* ...Some component styles... */
+
+/* MEDIA QUERIES -------------------------------------------------- */
+
+/* ...Some media queries... */

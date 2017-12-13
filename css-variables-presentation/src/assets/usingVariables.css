@@ -1,0 +1,28 @@
+/* VARIABLES --------------------------------------------------- */
+:root {
+  /* Some variables... */
+}
+
+/* BASE STYLES ------------------------------------------------- */
+body {
+  font-family: var(--font-stack);
+}
+
+a,
+h2 {
+  color: var(--color-primary);
+}
+
+header {
+  background: linear-gradient(var(--gradient)), url('../img/bg.jpg') no-repeat;
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+/* COMPONENT STYLES ----------------------------------------------- */
+
+/* ...Some component styles... */
+
+/* MEDIA QUERIES -------------------------------------------------- */
+
+/* ...Some media queries... */
