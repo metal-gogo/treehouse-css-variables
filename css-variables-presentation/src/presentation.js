@@ -75,25 +75,23 @@ export default class Presentation extends React.Component {
             why would I need them if I use [insert favourite CSS preprocessor
             name]?
           </Heading>
-          <Text margin="100px 0 0" textColor="secondary">
+          <Text margin="100px 0 0" textColor="quarternary">
             by Daniel González
           </Text>
         </Slide>
 
-        <Slide transition={['fade']} bgColor="secondary">
+        <Slide transition={['fade']} bgColor="secondary" textColor="primary">
           <Heading size={1} caps lineHeight={1} textColor="terciary">
             CSS Variables
           </Heading>
           <List margin="30px 0 0">
-            <ListItem margin="10px 0 0" textColor="primary">
+            <ListItem margin="10px 0 0">
               CSS variables are [potentially] game changers!
             </ListItem>
-            <ListItem margin="10px 0 0" textColor="primary">
+            <ListItem margin="10px 0 0">
               They can do more than preprocessor variables.
             </ListItem>
-            <ListItem margin="10px 0 0" textColor="primary">
-              Supported in mayor browsers.
-            </ListItem>
+            <ListItem margin="10px 0 0">Supported in mayor browsers.</ListItem>
           </List>
           <Appear>
             <Text margin="40px 0 0" textColor="quarternary">
@@ -115,27 +113,27 @@ export default class Presentation extends React.Component {
           <CanIUse feature="css-variables" />
         </Slide>
 
-        <Slide transition={['fade']} bgColor="secondary">
+        <Slide transition={['fade']} bgColor="secondary" textColor="primary">
           <Heading textColor="tertiary" fit bold>
             Declaring and using CSS variables
           </Heading>
           <List margin="30px 0 0">
-            <ListItem margin="10px 0 0" textColor="primary">
+            <ListItem margin="10px 0 0">
               Declare the variable inside a selector using custom property
               notation.
             </ListItem>
-            <ListItem margin="10px 0 0" textColor="primary">
+            <ListItem margin="10px 0 0">
               Reference the variable or property name.
             </ListItem>
           </List>
         </Slide>
 
-        <Slide transition={['fade']} bgColor="secondary">
+        <Slide transition={['fade']} bgColor="secondary" textColor="primary">
           <Heading textColor="tertiary" fit bold>
             Declaring and using CSS variables
           </Heading>
           <List margin="30px 0 0">
-            <ListItem margin="10px 0 0" textColor="primary">
+            <ListItem margin="10px 0 0">
               Declare the variable inside a selector using custom property
               notation.
             </ListItem>
@@ -150,12 +148,12 @@ export default class Presentation extends React.Component {
           </Appear>
         </Slide>
 
-        <Slide transition={['fade']} bgColor="secondary">
+        <Slide transition={['fade']} bgColor="secondary" textColor="primary">
           <Heading textColor="tertiary" fit bold>
             Declaring and using CSS variables
           </Heading>
           <List margin="30px 0 0">
-            <ListItem margin="10px 0 0" textColor="primary">
+            <ListItem margin="10px 0 0">
               Reference the variable or property name.
             </ListItem>
           </List>
