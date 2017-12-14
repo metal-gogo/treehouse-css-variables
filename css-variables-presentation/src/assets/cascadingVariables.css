@@ -9,22 +9,22 @@
   padding: 0.75em 1.5em;
   border-radius: 0.35em;
 
-  font-size: var(--btn-font-size);
-  background-color: var(--btn-bg);
+  font-size: calc(var(--btn-font-size, 1) * 1em);
+  background-color: var(--btn-bg, blueviolet);
 }
 
 .intro {
-  --btn-font-size: 1.1em;
+  --btn-font-size: 1.1;
   --btn-bg: #b13c69;
 }
 
 .card {
-  --btn-font-size: 0.85em;
+  --btn-font-size: 0.85;
   --btn-bg: #60a4b3;
 }
 
 .modal {
-  --btn-font-size: 1em;
+  --btn-font-size: 1;
   --btn-bg: #e85838;
   display: none;
 }

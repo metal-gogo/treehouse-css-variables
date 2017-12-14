@@ -201,6 +201,39 @@ export default class Presentation extends React.Component {
           </Table>
         </Slide>
 
+        <Slide transition={['fade']} bgColor="secondary" textColor="primary">
+          <Heading textColor="tertiary" fit bold>
+            CSS variables cascade and inheritance
+            <i className="em em-sunglasses" />
+          </Heading>
+          <List margin="30px 0 0">
+            <ListItem margin="10px 0 0">
+              Since CSS variables follow the standard cascade rules, the behave
+              liker regular CSS properties.
+            </ListItem>
+            <ListItem margin="10px 0 0">
+              Therefore, they inherit, cascade, and can be declared on or scoped
+              to any CSS selector.
+            </ListItem>
+            <ListItem margin="10px 0 0">
+              You can define and/or reset a variable at different levels of
+              specificity.
+            </ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']} bgColor="secondary">
+          <Heading margin="0 0 30px" textColor="tertiary" bold>
+            CSS variables
+          </Heading>
+          <Glitch
+            alt="CSS variables cascade and inheritance"
+            path="variables.css"
+            project="css-variables-cascade-and-inheritance"
+            title="CSS variables cascade and inheritance"
+          />
+        </Slide>
+
         <Slide transition={['fade']} bgColor="secondary">
           <Heading margin="0 0 30px" textColor="tertiary" bold>
             SCSS variables
@@ -223,39 +256,6 @@ export default class Presentation extends React.Component {
             project="scss-variables-success"
             title="CSS variables success"
           />
-        </Slide>
-
-        <Slide transition={['fade']} bgColor="secondary">
-          <Heading margin="0 0 30px" textColor="tertiary" bold>
-            CSS variables <i className="em em-tada" />
-          </Heading>
-          <Glitch
-            alt="CSS variables cascade and inheritance"
-            path="variables.css"
-            project="css-variables-cascade-and-inheritance"
-            title="CSS variables cascade and inheritance"
-          />
-        </Slide>
-
-        <Slide transition={['fade']} bgColor="secondary" textColor="primary">
-          <Heading textColor="tertiary" fit bold>
-            CSS variables cascade and inheritance FTW{' '}
-            <i className="em em-sunglasses" />
-          </Heading>
-          <List margin="30px 0 0">
-            <ListItem margin="10px 0 0">
-              Since CSS variables follow the standard cascade rules, the behave
-              liker regular CSS properties.
-            </ListItem>
-            <ListItem margin="10px 0 0">
-              Therefore, they inherit, cascade, and can be declared on or scoped
-              to any CSS selector.
-            </ListItem>
-            <ListItem margin="10px 0 0">
-              You can define and/or reset a variable at different levels of
-              specificity.
-            </ListItem>
-          </List>
         </Slide>
 
         <Slide transition={['fade']} bgColor="secondary" textColor="primary">
