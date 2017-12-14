@@ -201,7 +201,7 @@ export default class Presentation extends React.Component {
               </TableRow>
               <TableRow>
                 <TableItem>
-                  Variables are replaces with static values when compiled
+                  Variables are replaced with static values when compiled
                 </TableItem>
                 <TableItem>Browsers can update them at runtime</TableItem>
               </TableRow>
