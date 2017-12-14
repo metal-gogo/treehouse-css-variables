@@ -270,6 +270,17 @@ export default class Presentation extends React.Component {
             overflow="overflow"
           />
         </Slide>
+
+        <Slide transition={['fade']} bgColor="secondary">
+          <Heading margin="0 0 30px" textColor="tertiary" bold fit>
+            CSS variables and SVGs
+          </Heading>
+          <Glitch
+            alt="CSS variables and SVGs"
+            project="css-variables-and-svgs"
+            title="CSS variables and SVGs"
+          />
+        </Slide>
       </Deck>
     );
   }
