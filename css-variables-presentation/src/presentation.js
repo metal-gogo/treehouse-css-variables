@@ -12,6 +12,12 @@ import {
   ListItem,
   List,
   Slide,
+  Table,
+  TableBody,
+  TableHeader,
+  TableHeaderItem,
+  TableItem,
+  TableRow,
   Text
 } from 'spectacle';
 
@@ -23,11 +29,13 @@ import CanIUse from './components/can-i-use';
 import Glitch from './components/glitch';
 
 // Import examples
+import cascadingVariablesExample from '!raw-loader!./assets/cascadingVariables.css';
 import declaringVariablesExample from '!raw-loader!./assets/declaringVariables.css';
 import usingVariablesExample from '!raw-loader!./assets/usingVariables.css';
 
 // Require CSS
-require('normalize.css');
+import 'normalize.css';
+import './styles.css';
 
 const theme = createTheme(
   {
@@ -41,22 +49,6 @@ const theme = createTheme(
     secondary: 'Helvetica'
   }
 );
-
-const glitchWrapStyle = {
-  height: '600px',
-  width: '100%',
-  border: '1px solid #C3C3C3',
-  borderRadius: '5px',
-  boxShadow: '4px 4px #C3C3C3',
-  backgroundColor: 'white',
-  overflow: 'hidden'
-};
-
-const glitchIframeStyle = {
-  height: '100%',
-  width: '100%',
-  border: 0
-};
 
 export default class Presentation extends React.Component {
   render() {
@@ -176,6 +168,106 @@ export default class Presentation extends React.Component {
             path="variables.css"
             project="using-and-declaring-css-variables"
             title="Using and declaring css variables"
+          />
+        </Slide>
+
+        <Slide transition={['fade']} bgColor="secondary" textColor="primary">
+          <Heading margin="0 0 30px" textColor="tertiary" fit bold>
+            CSS variables VS Preprocessor variables
+          </Heading>
+          <Table className="table">
+            <TableHeader>
+              <TableRow>
+                <TableHeaderItem>Preprocessor</TableHeaderItem>
+                <TableHeaderItem>CSS</TableHeaderItem>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              <TableRow>
+                <TableItem>They do not run in the browser</TableItem>
+                <TableItem>They run in the browser</TableItem>
+              </TableRow>
+              <TableRow>
+                <TableItem>
+                  Variables are replaces with static values when compiled
+                </TableItem>
+                <TableItem>Browsers can update them at runtime</TableItem>
+              </TableRow>
+              <TableRow>
+                <TableItem>They are not aware of the DOM structure</TableItem>
+                <TableItem>Have dynamic capabilities</TableItem>
+              </TableRow>
+            </TableBody>
+          </Table>
+        </Slide>
+
+        <Slide transition={['fade']} bgColor="secondary">
+          <Heading margin="0 0 30px" textColor="tertiary" bold>
+            SCSS variables
+          </Heading>
+          <Glitch
+            alt="SCSS variables error"
+            path="public/style.scss"
+            project="scss-variables-error"
+            title="CSS variables error"
+          />
+        </Slide>
+
+        <Slide transition={['fade']} bgColor="secondary">
+          <Heading margin="0 0 30px" textColor="tertiary" bold>
+            SCSS variables
+          </Heading>
+          <Glitch
+            alt="SCSS variables success"
+            path="public/style.scss"
+            project="scss-variables-success"
+            title="CSS variables success"
+          />
+        </Slide>
+
+        <Slide transition={['fade']} bgColor="secondary">
+          <Heading margin="0 0 30px" textColor="tertiary" bold>
+            CSS variables <i className="em em-tada" />
+          </Heading>
+          <Glitch
+            alt="CSS variables cascade and inheritance"
+            path="variables.css"
+            project="css-variables-cascade-and-inheritance"
+            title="CSS variables cascade and inheritance"
+          />
+        </Slide>
+
+        <Slide transition={['fade']} bgColor="secondary" textColor="primary">
+          <Heading textColor="tertiary" fit bold>
+            CSS variables cascade and inheritance FTW{' '}
+            <i className="em em-sunglasses" />
+          </Heading>
+          <List margin="30px 0 0">
+            <ListItem margin="10px 0 0">
+              Since CSS variables follow the standard cascade rules, the behave
+              liker regular CSS properties.
+            </ListItem>
+            <ListItem margin="10px 0 0">
+              Therefore, they inherit, cascade, and can be declared on or scoped
+              to any CSS selector.
+            </ListItem>
+            <ListItem margin="10px 0 0">
+              You can define and/or reset a variable at different levels of
+              specificity.
+            </ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={['fade']} bgColor="secondary" textColor="primary">
+          <Heading textColor="tertiary" fit bold>
+            CSS variables cascade and inheritance FTW{' '}
+            <i className="em em-sunglasses" />
+          </Heading>
+          <CodePane
+            lang="css"
+            source={cascadingVariablesExample}
+            margin="30px auto"
+            overflow="overflow"
           />
         </Slide>
       </Deck>

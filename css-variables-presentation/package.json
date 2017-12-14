@@ -10,7 +10,8 @@
     "raw-loader": "^0.5.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "spectacle-scripts": "2.0.0"
+    "spectacle-scripts": "2.0.0",
+    "styled-components": "^2.2.4"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [

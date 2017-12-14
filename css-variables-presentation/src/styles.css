@@ -1,0 +1,17 @@
+.table {
+  border-collapse: collapse;
+}
+
+.table thead {
+  font-weight: 600;
+}
+
+.table tbody tr {
+  text-align: left;
+}
+
+.table td {
+  width: 50%;
+  padding: 10px 20px;
+  border: 1px solid #959ea2;
+}
