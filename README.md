@@ -13,4 +13,4 @@ In this repo I will follow the [Using CSS Variables Treehouse Workshop](https://
 
 ## Presentation
 
-- [CSS Variables - why would I need them if I use [insert favourite CSS preprocessor name]?](css-variables-presentation/)
+- [Code](css-variables-presentation/) and [live presentation](https://css-variables.firebaseapp.com/)
